@@ -38,7 +38,7 @@ p,h1 {
 	text-align: center;
 }
 
-img {
+img.floatedimg {
 	display: block;
 	float: left;
 	margin-left: auto;
