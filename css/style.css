@@ -180,12 +180,13 @@ section {
 
 /****** Team Section  ******/
 .team {
-		width: 100%;
-		min-height: 600px;
-		overflow: hidden;
-		color: #2d3539;
-		background: #1fda9a;
-		font-family: 'Quicksand', sans-serif;
+	display: block;
+	position: relative;
+	background-image: url("../img/cuadros.png");
+	background-repeat: repeat;
+	width: 100%;
+	min-height: 600px;
+	overflow: auto;
 }
 
 #teamcontainer {
@@ -277,13 +278,185 @@ h3 {
 	color: white;
 }
 
-/****** Team Section  ******/
+/****** Peepingtom Section  ******/
+.peepingtom {
+	width: 100%;
+	height: 200px;
+}
+
+
+/****** Signup Section  ******/
+
+.signup {
+	display: block;
+	position: relative;
+	background-color: #1fda9a;
+	width: 100%;
+	min-height: 600px;
+	overflow: auto;
+}
+
+#signupcontainer {
+	display: block;
+	margin: auto;
+	width: 60%;
+	min-height: 400px;
+	/*background-color: white;*/
+	margin: 0px auto 50px auto;
+}
+
+#signupsection {
+	display: block;
+	max-width: 100%;
+	min-width: 300px;
+	min-height: 400px;
+	overflow: auto;
+	margin: auto;
+	font-color: #ee4b3e;
+}
+
+.signupfloatleft {
+	width: 300px;
+	margin: 20px 20px 20px 20px;
+	background-image: url("../img/swing.png");
+	height: 400px;
+	float: left;
+}
+
+.signupfloatright {
+	width: 300px;
+	margin: 20px 20px 20px 20px;
+	background-image: url("../img/park.png");
+	height: 400px;
+	float: right;
+}
+
+#teampic1 {
+	float: left;
+	background: url("../img/team-01.png") no-repeat;
+	margin-top: 20px;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+}
+
+#teampic2 {
+	float: left;
+	background: url("../img/team-02.png") no-repeat;
+	margin-top: 20px;
+	width: 220px;
+	height: 220px;
+	display: inline-block;
+	text-align: center;
+}
+
+#teampic3 {
+	vertical-align: middle;
+	text-align: center;
+	background: url("../img/team-03.png") no-repeat;
+	margin: 20px auto 0 auto;
+	width: 220px;
+	height: 220px;
+	position: relative;
+	display: block;
+}
+
+p.centered {
+	position: relative;
+	margin: 10px auto;
+	width: 80%;
+	vertical-align: middle;
+	text-align: center;
+	color: #48a0dc;
+	font-family: 'Quicksand', sans-serif;	
+	line-height: 30px;
+}
+
+img.centeredimg {
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	width: 202px;
+	height: 220px;
+}
+
+h3 {
+	position: relative;
+	text-align: center;
+	margin: 50px 0 50px 0;
+	overflow: auto;
+	width: 100%;
+	font-family: 'Lobster', sans-serif;
+	font-size: 40px;
+	color: white;
+}
+
+#oolala {
+	font-size: 40px;
+	line-height: 42px;
+	color: #fff;
+	font-family: 'Lobster', cursive;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%);    /* 4 */
+	left: 10%;
+}
+
+/* Pulse */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+  75% {
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+  }
+}
+
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+
+  75% {
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+  }
+}
+
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/****** Footer Section  ******/
 .footer {
 	width: 100%;
 	height: 100px;
 	background-color: black;
 	opacity: .8;
-	margin-top: 50px;	
+	margin-top: 0px;	
 }
 
 p.footerstyle {
@@ -297,11 +470,4 @@ p.footerstyle {
 	font-family: 'Quicksand', sans-serif;	
 	line-height: 30px;
 }
-
-/****** Peepingtom Section  ******/
-.peepingtom {
-	width: 100%;
-	height: 200px;
-}
-
 
