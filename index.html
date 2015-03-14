@@ -22,7 +22,7 @@
 <body>
 	<div class="container">
 		<video autoplay id="bgvid" loop="loop" muted="muted">
-			<source src="vid/Mom_at_playground.mp4" type="video/mp4">
+			<!--><source src="vid/Mom_at_playground.mp4" type="video/mp4">-->
 		</video>
 	</div>
 	<div id="logowrapper"> 
@@ -74,14 +74,39 @@
 		<h3>Let's Get Started<br></h3>
 		<div id = "signupcontainer">
 				<div id="signupsection">
-					<section class="signupfloatleft hvr-pulse">
-						<!--<img class="centeredimg" src="img/team-01.png" alt="get a computer, n00b"> -->
-						<p class="centered" id="oolala">Sign Up Now</p> 						
+					 <section class="signupfloatleft">
+						 <form>
+							 <ul class="input-list style-1 clearfix">
+								 	<li>
+										<input type="text" name="name" placeholder="name" required>
+									</li>
+								 	<li>
+										<input type="text" name="email" placeholder="email" required>
+									</li>
+								 	<li>
+										<input type="text" name="zipcode" placeholder="zipcode" required>
+									</li>
+								 	<li>
+										<input class="btn btn-2 btn-2b" type="submit" name="submit" value="Login">										
+									</li>
+							</ul>
+						</form>														
 					</section>
+					
+					<!--<button type="button" class="signupfloatleft hvr-pulse" id ="leftbutton" onclick="morph()">
+					<p class="centered" id="oolala">Sign Up Now</p> 						
+					</button>-->
+					
+					<!--<button type="button" class="signupfloatright hvr-pulse">
+					<p class="centered" id="oolala">I'd like some more info</p> 						
+					</button>-->
+					<!--<a href="#">
+
 					<section class="signupfloatright hvr-pulse">
-						<!--<img class="centeredimg" src="img/team-02.png" alt="get a computer, n00b">-->
 						<p class="centered" id="oolala">I'd like some more information.</p> 
 					</section> 
+					</a> -->
+					
 				</div>
 			</div>
 	</div>
@@ -91,6 +116,8 @@
 	<div class="footer">
 		<p class="footerstyle">&copy; 2015 Blueberry.com<p>
 	</div>
+	<!--<script src="js/scripts.js"></script>-->
+	
 			
    <!-- BigVideo Dependencies -->
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
