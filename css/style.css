@@ -171,7 +171,8 @@ section {
 
 #balloon {
 	float: left;
-	background: url("../img/balloons.png") no-repeat;
+	background-image: url("../img/Balloons.png");
+	background-repeat: no-repeat;
 	margin: 0px 20px 0px 0px;
 	width: 120px;
 	height: 100px;
